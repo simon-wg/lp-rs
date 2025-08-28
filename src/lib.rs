@@ -4,9 +4,6 @@ use reqwest;
 use scraper::{Html, Selector};
 use std::fmt;
 
-const URL: &str = "https://www.chalmers.se/utbildning/dina-studier/planera-och-genomfora-studier/datum-och-tider-for-lasaret/";
-
-#[derive(Debug)]
 pub struct StudyPeriod {
     pub year: i32,
     pub period: i32,
@@ -14,7 +11,6 @@ pub struct StudyPeriod {
     pub end_date: NaiveDate,
 }
 
-#[derive(Debug)]
 pub struct StudyYear {
     pub year: i32,
     pub start_date: NaiveDate,
